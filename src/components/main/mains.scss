@@ -1,0 +1,117 @@
+.btn {
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  background: rgb(194, 247, 3);
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  &:hover {
+    background: #02ff57;
+    color: white;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: auto;
+  }
+}
+
+// 
+// Header
+// 
+.header {
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    color: #fff;
+  }
+
+  .btn {
+    width: 140px;
+    display: inline-block;
+  }
+
+  .btn + .btn {
+    margin-left: 20px;
+  }
+}
+
+.garage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// 
+// Forms
+// 
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 320px;
+  margin-bottom: 10px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+
+  .input {
+    height: 40px;
+    width: 150px;
+    border: 0;
+  }
+
+  .color {
+    height: 36px;
+    border: 0;
+  }
+
+  .btn {
+    width: 100px;
+  }
+}
+
+// 
+// Btns-list
+// 
+.btns-list {
+  display: flex;
+  justify-content: space-around;
+  width: 320px;
+
+  .btn {
+    width: 90px;
+  }
+}
+
+// 
+// Pagination
+// 
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .btn {
+    width: 60px;
+    height: 30px;
+  }
+}
