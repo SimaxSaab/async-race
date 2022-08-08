@@ -69,5 +69,8 @@ module.exports = ({ development }) => ({
   resolve: {
     extensions: ['.ts', '.js'],
   },
+  experiments: {
+    topLevelAwait: true
+  },
   ...devServer(development),
 });

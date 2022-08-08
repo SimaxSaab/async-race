@@ -1,10 +1,12 @@
+import { garage } from '../garage/garage';
+
 import './mains.scss';
 
 export const main = (): void => {
   const root = document.createElement('div');
   root.innerHTML = `
     <header class="header">
-      <h1 class="title">mAkSYmNC Race</h1>
+      <h1 class="title" title="MAkSYmnC Race">mAkSYmNC Race</h1>
       <div>
         <button class="btn to-garage-btn">garage</button>
         <button class="btn to-winners-btn">winners</button>
@@ -54,7 +56,7 @@ export const main = (): void => {
           <button class="btn generate-btn" id="generate">Generate</button>
         </li>
       </ul>
-      <div id="garage" class="garage">Garage Content</div>
+      <div id="garage" class="garage">${garage()}</div>
       <div>
         <p class="win-message hidden" id="win-message"></p>
       </div>
